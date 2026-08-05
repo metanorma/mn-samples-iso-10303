@@ -1,0 +1,63 @@
+= ISO 10303 dummy collection sample in Metanorma (Metanorma-ISO / suma)
+
+image:https://github.com/metanorma/mn-samples-iso-10303/workflows/generate/badge.svg["Build Status", link="https://github.com/metanorma/mn-samples-iso-10303/actions?query=workflow%3Agenerate"]
+image:https://github.com/metanorma/mn-samples-iso-10303/workflows/docker/badge.svg["Docker Build Status", link="https://github.com/metanorma/mn-samples-iso-10303/actions?query=workflow%3Adocker"]
+
+This collection is available in its rendered forms here:
+
+* https://metanorma.github.io/mn-samples-iso-10303/[ISO 10303 dummy collection (repository)]
+
+== Introduction
+
+This repository provides a readily usable synthetic dummy collection representing the ISO 10303 (STEP) module + resource document family, structured for building via https://github.com/metanorma/suma[suma] and rendering via https://github.com/metanorma/metanorma-iso[Metanorma-ISO].
+
+Placeholder content is used throughout so the collection can serve as a full-feature-stack integration test — for suma, for metanorma-iso, and for the metanorma-cli release chain — without carrying real ISO 10303 material.
+
+Refer to the https://www.metanorma.com/overview/getting-started/[Metanorma quickstart] for a primer on creating Metanorma-ISO documents, and to https://github.com/metanorma/suma[suma] for the ISO 10303 collection build path.
+
+== Fetching the collection
+
+[source,sh]
+----
+git clone https://github.com/metanorma/mn-samples-iso-10303/
+----
+
+== Installing build tools
+
+See https://www.metanorma.com/overview/getting-started/
+
+== Running via Docker or locally
+
+If you have installed the build tools locally, use them directly.
+
+If you don't want to deal with local dependencies, use Docker:
+
+[source,sh]
+----
+docker run -v "$(pwd)":/metanorma -w /metanorma -it metanorma/mn metanorma site generate
+----
+
+== Building the collection
+
+[source,sh]
+----
+metanorma site generate
+----
+
+== Structure
+
+The collection contains three synthetic documents — two modules and one resource — each with associated EXPRESS schemas, templates, and change annotations:
+
+* `documents/doohickey-module/` — synthetic ISO 10303 module document
+* `documents/gizmo-module/` — synthetic ISO 10303 module document
+* `documents/widget-resource/` — synthetic ISO 10303 resource document
+* `schemas/modules/` — EXPRESS schemas for the synthetic modules
+* `schemas/resources/` — EXPRESS schemas for the synthetic resources
+* `templates/` — AsciiDoc templates for schema documentation
+* `collection.yml` — collection manifest at the top level
+* `metanorma.yml` — site configuration
+
+== Related
+
+* https://github.com/metanorma/suma[suma] — the ISO 10303 collection build tool that consumes this sample
+* https://github.com/metanorma/metanorma-iso[metanorma-iso] — the Metanorma flavour used to render each document
