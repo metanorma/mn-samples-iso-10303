@@ -15,7 +15,7 @@
 :mn-document-class: iso
 :mn-output-extensions: xml,html,presentation
 :local-cache-only:
-:lutaml-express-index: schemas; ../../schemas.yml;
+:lutaml-express-index: schemas; schemas.yaml;
 
 == Scope
 
