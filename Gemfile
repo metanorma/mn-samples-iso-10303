@@ -10,7 +10,7 @@ gem "metanorma", git: "https://github.com/metanorma/metanorma", branch: "main"
 gem "metanorma-taste", git: "https://github.com/metanorma/metanorma-taste", branch: "main"
 gem "metanorma-utils", git: "https://github.com/metanorma/metanorma-utils", branch: "main"
 gem "suma", git: "https://github.com/metanorma/suma", branch: "main"
-gem "relaton", "= 3.0.0"
+gem "relaton", "~> 3.0" # 3.0.1 carries the COW prune fix (relaton#392)
 gem "relaton-render", "= 3.0.0"
 gem "relaton-bib", "2.2.0.pre.alpha.1"
 gem "pubid", "~> 2.0" # 2.0.0 released; the git source now carries the 2.1 pre line
