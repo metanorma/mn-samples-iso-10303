@@ -1299,7 +1299,7 @@ DEPENDENCIES
   metanorma-utils!
   moxml!
   pubid (~> 2.0)
-  relaton (= 3.0.0)
+  relaton (~> 3.0)
   relaton-bib (= 2.2.0.pre.alpha.1)
   relaton-render (= 3.0.0)
   sassc-embedded
