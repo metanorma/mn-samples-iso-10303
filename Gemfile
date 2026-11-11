@@ -10,7 +10,6 @@ gem "metanorma", git: "https://github.com/metanorma/metanorma", branch: "main"
 gem "metanorma-taste", git: "https://github.com/metanorma/metanorma-taste", branch: "main"
 gem "metanorma-utils", git: "https://github.com/metanorma/metanorma-utils", branch: "main"
 gem "suma", git: "https://github.com/metanorma/suma", branch: "main"
-gem "relaton", "~> 3.1.1" # monogem line; relaton-bib retired
 gem "relaton-render", "= 3.0.0"
 gem "pubid", "~> 2.0" # 2.0.0 released; the git source now carries the 2.1 pre line
 gem "moxml", github: "lutaml/moxml", branch: "main"
